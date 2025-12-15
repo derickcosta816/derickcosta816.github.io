@@ -1,32 +1,235 @@
+
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Meu Site</title>
+  <title>escritorapostador</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Poker sem glamour. Um projeto sobre disciplina, risco, método e lucidez.">
+  <meta name="author" content="Dérick Costa">
+
+  <!-- Tipografia -->
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
   <style>
+    :root {
+      --bg: #f9f9f7;
+      --text: #1f1f1f;
+      --muted: #666;
+      --line: #ddd;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      background: #0f172a;
-      color: #e5e7eb;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
       margin: 0;
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: 'Libre Baskerville', serif;
+      line-height: 1.8;
     }
-    .box {
-      text-align: center;
-      max-width: 600px;
+
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 60px 20px;
     }
+
+    header {
+      margin-bottom: 80px;
+    }
+
     h1 {
-      color: #38bdf8;
+      font-size: 2.4rem;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+
+    .subtitle {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+
+    nav {
+      margin-top: 30px;
+      border-top: 1px solid var(--line);
+      padding-top: 20px;
+    }
+
+    nav a {
+      margin-right: 20px;
+      text-decoration: none;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.9rem;
+      color: var(--text);
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      margin-bottom: 80px;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      margin-bottom: 20px;
+    }
+
+    p {
+      margin-bottom: 20px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid var(--line);
+      margin: 80px 0;
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      padding-top: 30px;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.85rem;
+      color: var(--muted);
     }
   </style>
 </head>
+
 <body>
-  <div class="box">
-    <h1>Meu site está no ar 🚀</h1>
-    <p>Hospedado gratuitamente no GitHub Pages, sem anúncios.</p>
+
+  <div class="container">
+
+    <!-- HEADER -->
+    <header>
+      <h1>escritorapostador</h1>
+      <div class="subtitle">
+        poker, escrita, disciplina e risco — sem glamour
+      </div>
+
+      <nav>
+        <a href="index.html">Manifesto</a>
+        <a href="projeto.html">O Projeto</a>
+        <a href="metodologia.html">Metodologia</a>
+        <a href="lives.html">Lives & Arquivos</a>
+      </nav>
+    </header>
+
+    <!-- MANIFESTO -->
+    <section id="manifesto">
+      <h2>Manifesto</h2>
+
+      <p>
+        Poker não é glamour.
+        É variância, risco, disciplina e um custo mental que quase nunca aparece nas fotos.
+      </p>
+
+      <p>
+        Este projeto nasce como uma tentativa honesta de documentar um experimento:
+        tratar o poker como um <strong>hobby lucrativo</strong>,
+        submetido a regras claras, métricas explícitas e limites rígidos.
+      </p>
+
+      <p>
+        Aqui não há promessa de enriquecimento,
+        não há atalhos,
+        não há cursos milagrosos.
+      </p>
+
+      <p>
+        O que existe é método, exposição pública dos resultados,
+        erros documentados e a recusa consciente do discurso sedutor
+        que transforma exceções estatísticas em regra.
+      </p>
+    </section>
+
+    <hr>
+
+    <!-- QUATRO PERGUNTAS -->
+    <section id="perguntas">
+      <h2>As quatro perguntas</h2>
+
+      <p><strong>O que é este projeto?</strong><br>
+        Um registro público e contínuo da tentativa de aplicar disciplina,
+        método e lucidez ao poker online, sem depender dele como renda principal.
+      </p>
+
+      <p><strong>Para quem é (e para quem não é)?</strong><br>
+        É para quem aceita limites, variância e frustração.
+        Não é para quem busca glamour, atalhos ou validação.
+      </p>
+
+      <p><strong>Qual método está sendo testado?</strong><br>
+        A aplicação dos princípios do <em>Balanced Scorecard</em>
+        ao poker: financeiro, processos, mental e aprendizado.
+      </p>
+
+      <p><strong>Quais são as regras do jogo?</strong><br>
+        Bankroll definido, volume sustentável, transparência total
+        e nenhuma pressa por resultado.
+      </p>
+    </section>
+
+    <hr>
+
+    <!-- QUEM SOU -->
+    <section id="quem-sou">
+      <h2>Quem sou</h2>
+
+      <p>
+        Sou Dérick Costa, 35 anos, natural de Florianópolis,
+        atualmente residindo em Videira-SC, onde vim a trabalho.
+      </p>
+
+      <p>
+        Fui aluno de Letras – Português na UFSC,
+        curso que pretendo retomar para seguir carreira acadêmica.
+        A literatura e a linguagem moldam a forma como observo o mundo —
+        e o poker sempre esteve presente nesse olhar.
+      </p>
+
+      <p>
+        Atuo hoje como consultor empresarial,
+        trabalhando com médias empresas,
+        combinando metodologias clássicas e inovadoras.
+      </p>
+
+      <p>
+        Jogo poker desde os 13 anos.
+        Em alguns períodos de forma profissional,
+        em outros como presença constante e incômoda.
+        O jogo trouxe danos reais,
+        mas também ensinamentos que não romantizo.
+      </p>
+
+      <p>
+        Este site não busca redenção,
+        nem polêmica,
+        nem seguidores.
+        Apenas lucidez.
+      </p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      © escritorapostador — um projeto pessoal de Dérick Costa<br>
+      YouTube e Twitch: escritorapostador
+    </footer>
+
   </div>
+
 </body>
 </html>
