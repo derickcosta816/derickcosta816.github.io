@@ -1,43 +1,206 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <title>Lives & Arquivos — Escritor Apostador</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-</head>
+/* ==================================================
+   RESET BÁSICO
+   ================================================== */
 
-<body>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-<header>
-  <h1>Lives & Arquivos</h1>
-  <p class="subtitulo">histórico público</p>
+/* ==================================================
+   VARIÁVEIS (fácil ajuste futuro)
+   ================================================== */
 
-  <nav class="nav-principal">
-    <a href="index.html">Manifesto</a>
-    <a href="projeto.html">O Projeto</a>
-    <a href="metodologia.html">Metodologia</a>
-    <a href="indicadores.html">Indicadores</a>
-    <a href="diario.html">Diário</a>
-    <a href="fotos.html">Fotos</a>
-    <a href="lives.html">Lives & Arquivos</a>
-  </nav>
-</header>
+:root {
+  --bg: #fafafa;
+  --text: #111;
+  --muted: #555;
+  --line: #ddd;
+  --link-hover: #444;
+}
 
-<main>
+/* ==================================================
+   CORPO GERAL
+   ================================================== */
 
-<section>
-  <p>
-    Todas as lives ficam arquivadas no YouTube
-    e organizadas por período, limite e tema.
-  </p>
-</section>
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.65;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
 
-</main>
+/* ==================================================
+   CABEÇALHO
+   ================================================== */
 
-<footer>
-  <p>Arquivo Público — Poker como Método</p>
-</footer>
+header {
+  margin-bottom: 60px;
+}
 
-</body>
-</html>
+header h1 {
+  font-size: 2.2rem;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+.subtitulo {
+  font-size: 1rem;
+  color: var(--muted);
+}
+
+/* ==================================================
+   NAVEGAÇÃO
+   ================================================== */
+
+.nav-principal {
+  margin-top: 25px;
+  padding-top: 15px;
+  border-top: 1px solid var(--line);
+}
+
+.nav-principal a {
+  margin-right: 15px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  color: var(--text);
+}
+
+.nav-principal a:hover {
+  text-decoration: underline;
+  color: var(--link-hover);
+}
+
+/* Mobile simples */
+@media (max-width: 600px) {
+  .nav-principal a {
+    display: inline-block;
+    margin-bottom: 8px;
+  }
+}
+
+/* ==================================================
+   CONTEÚDO
+   ================================================== */
+
+main {
+  margin-bottom: 80px;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+/* ==================================================
+   TÍTULOS
+   ================================================== */
+
+h2 {
+  font-size: 1.2rem;
+  font-weight: normal;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+/* ==================================================
+   TEXTO
+   ================================================== */
+
+p {
+  margin-bottom: 18px;
+  font-size: 1rem;
+}
+
+/* ==================================================
+   LISTAS
+   ================================================== */
+
+ul {
+  margin-left: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* ==================================================
+   MANIFESTO
+   ================================================== */
+
+.manifesto p {
+  margin-bottom: 22px;
+}
+
+/* ==================================================
+   LINKS
+   ================================================== */
+
+a {
+  color: var(--text);
+}
+
+a:hover {
+  color: var(--link-hover);
+}
+
+/* ==================================================
+   DIÁRIO
+   ================================================== */
+
+.diario-entry {
+  margin-bottom: 60px;
+}
+
+.diario-entry h2 {
+  margin-bottom: 8px;
+}
+
+.diario-entry em {
+  display: block;
+  margin-bottom: 15px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+/* ==================================================
+   FOTOS
+   ================================================== */
+
+figure {
+  margin-bottom: 40px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 8px;
+}
+
+figcaption {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+/* ==================================================
+   FOOTER
+   ================================================== */
+
+footer {
+  margin-top: 80px;
+  padding-top: 30px;
+  border-top: 1px solid var(--line);
+  font-size: 0.85rem;
+  color: #666;
+  text-align: center;
+}
