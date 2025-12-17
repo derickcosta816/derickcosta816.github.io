@@ -266,3 +266,191 @@ footer {
 .site-footer a:hover {
   text-decoration: underline;
 }
+
+/* =========================
+   AJUSTES GERAIS DE LEITURA
+   ========================= */
+
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2rem 1.2rem;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+h1 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+ul {
+  margin-left: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.4rem;
+}
+
+
+/* =========================
+   NOTAS FIXAS / FRASES-GUIA
+   ========================= */
+
+.nota {
+  font-size: 0.95rem;
+  color: #555;
+  border-left: 3px solid #ccc;
+  padding-left: 0.8rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.guia {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 1.2rem;
+  font-style: italic;
+}
+
+
+/* =========================
+   BLOCOS ESPECÍFICOS
+   ========================= */
+
+/* INDEX — acompanhamento */
+.acompanhamento {
+  margin-top: 4rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #ddd;
+}
+
+/* PROJETO — o que não é */
+.nao-e ul {
+  list-style-type: "— ";
+  margin-left: 1rem;
+}
+
+.nao-e li {
+  margin-bottom: 0.6rem;
+  color: #333;
+}
+
+
+/* =========================
+   INDICADORES
+   ========================= */
+
+.indicadores ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.indicadores li {
+  padding: 0.3rem 0;
+  border-bottom: 1px dotted #e0e0e0;
+  font-size: 0.95rem;
+}
+
+.indicadores li:last-child {
+  border-bottom: none;
+}
+
+.porque {
+  font-size: 0.95rem;
+  color: #555;
+  margin: 1rem 0 2rem;
+}
+
+
+/* =========================
+   DIÁRIO
+   ========================= */
+
+.diario-entry {
+  margin-bottom: 3rem;
+}
+
+.diario-entry em {
+  display: block;
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+
+/* =========================
+   FOTOS
+   ========================= */
+
+.fotos p,
+section p {
+  max-width: 680px;
+}
+
+
+/* =========================
+   LIVES
+   ========================= */
+
+.lives {
+  margin-top: 2rem;
+}
+
+
+/* =========================
+   HEADER E FOOTER (REFINO)
+   ========================= */
+
+.site-header {
+  text-align: center;
+  padding: 1.5rem 1rem 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.site-title {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 0.8rem;
+}
+
+.nav-principal a {
+  margin: 0 0.5rem;
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: #333;
+}
+
+.nav-principal a:hover {
+  text-decoration: underline;
+}
+
+.site-footer {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #666;
+  padding: 2rem 1rem;
+  border-top: 1px solid #ddd;
+}
