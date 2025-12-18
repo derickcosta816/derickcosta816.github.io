@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Números reais do poker</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html">Início</a>
+    <a href="projeto.html">Projeto</a>
+    <a href="metodologia.html">Metodologia</a>
+    <a href="indicadores.html">Indicadores</a>
+    <a href="numerosreaisdopoker.html">Números reais do poker</a>
+    <a href="diario.html">Diário</a>
+    <a href="fotos.html">Fotos</a>
+    <a href="lives.html">Lives</a>
+  </nav>
+</header>
+
+<main class="container">
+
+  <section class="page-header">
+    <h1>Números reais do poker</h1>
+    <p class="subtitle">
+      Matemática, variância e consequências reais.  
+      Sem promessas. Sem glamour.
+    </p>
+  </section>
+
+  <!-- ================= MTT ================= -->
+
+  <section class="content-section">
+    <h2>Torneios (MTT) e a ilusão da estabilidade</h2>
+
+    <p>
+      Este texto não parte da experiência pessoal em torneios, mas de pesquisa,
+      simulações estatísticas e observação de padrões amplamente documentados.
+    </p>
+
+    <p>
+      Em teoria, um jogador iniciante deveria começar pelos torneios de centavinhos.
+      Na prática, o caminho mais comum é entrar para algum time e jogar uma grade
+      diária com <strong>average buy-in entre 2 e 5 dólares</strong>.
+    </p>
+
+    <p>
+      Vamos assumir um cenário otimista: <strong>ABI de 5 dólares</strong>.
+      Ainda assim, a maior parte dos jogadores de time fica com cerca de
+      <strong>30% dos lucros</strong>, enquanto o rakeback é retido pela estrutura.
+    </p>
+
+    <div class="box">
+      <strong>Resumo do modelo típico:</strong><br>
+      – Risco: do jogador<br>
+      – Variância: do jogador<br>
+      – Fluxo previsível: do time
+    </div>
+
+    <p>
+      Em torneios com fields próximos de mil jogadores, a variância se torna
+      o elemento dominante. É estatisticamente normal passar um ano inteiro
+      sem lucro relevante, mesmo sendo um jogador vencedor.
+    </p>
+
+    <div class="box">
+      <strong>Simulação formal (MTT):</strong><br>
+      ABI: $5<br>
+      Torneios/ano: 7.200<br>
+      ROI esperado: 10%<br><br>
+      – 21% de chance de prejuízo após um ano<br>
+      – ROI real variando de -19,33% a +39,29%<br>
+      – Bankroll ≈ $6.213 para apenas 1% de risco de quebra
+    </div>
+  </section>
+
+  <!-- ================= GRÁFICO MTT ================= -->
+
+  <section class="content-section">
+    <h3>Expectativa vs Dispersão (MTT)</h3>
+
+    <svg viewBox="0 0 600 300" class="chart">
+      <!-- eixo -->
+      <line x1="50" y1="250" x2="550" y2="250" stroke="#999"/>
+      <line x1="50" y1="50" x2="50" y2="250" stroke="#999"/>
+
+      <!-- expectativa -->
+      <line x1="50" y1="150" x2="550" y2="150" stroke="#333" stroke-width="2"/>
+
+      <!-- dispersão -->
+      <ellipse cx="300" cy="150" rx="220" ry="80"
+        fill="none" stroke="#bbb" stroke-dasharray="6"/>
+
+      <text x="300" y="140" text-anchor="middle" font-size="12">
+        Expectativa teórica
+      </text>
+      <text x="300" y="40" text-anchor="middle" font-size="12">
+        Dispersão extrema de resultados
+      </text>
+    </svg>
+  </section>
+
+  <!-- ================= CASH GAME ================= -->
+
+  <section class="content-section">
+    <h2>Cash Game — micro limites e realidade matemática</h2>
+
+    <p>
+      Ok, vamos falar de um assunto que interessa a todos que querem começar no mundo
+      do poker: quanto realmente dá para ganhar jogando baralho em casa ou em clubes
+      presenciais?
+    </p>
+
+    <p>
+      A resposta é a mesma para quase todas as perguntas do poker: <strong>depende</strong>.
+    </p>
+
+    <p>
+      A simulação a seguir considera um jogador iniciante jogando
+      <strong>PLO 0.01$/0.02$</strong> no GGpoker, com rakeback de 20%.
+    </p>
+
+    <div class="box">
+      – Rake médio: $0,14 a cada 100 mãos (≈ 7,21 bb)<br>
+      – Rakeback: 20%<br>
+      – Desvio padrão: 100 bb / 100 mãos<br>
+      – Winrate: 10 bb / 100 mãos
+    </div>
+
+    <p>
+      Após <strong>100 mil mãos</strong>:
+    </p>
+
+    <ul>
+      <li>Expectativa: 10.000 big blinds ($200)</li>
+      <li>Rake gerado: $140</li>
+      <li>Rakeback total: $28</li>
+    </ul>
+
+    <p>
+      O desvio padrão total após esse volume é de aproximadamente
+      <strong>3.162 big blinds</strong>, o que equivale a
+      <strong>±3,16 bb/100 mãos</strong>.
+    </p>
+
+    <p>
+      Há 50% de chances de você terminar acima da média esperada e
+      50% de chances de terminar abaixo dela.
+    </p>
+
+    <p>
+      Nessas condições, fica claro o quão difícil é transformar o poker
+      em fonte de renda estável, especialmente para jogadores jovens
+      e sem maturidade financeira.
+    </p>
+  </section>
+
+  <!-- ================= GRÁFICO CASH ================= -->
+
+  <section class="content-section">
+    <h3>Expectativa vs Dispersão (Cash Game)</h3>
+
+    <svg viewBox="0 0 600 300" class="chart">
+      <line x1="50" y1="250" x2="550" y2="250" stroke="#999"/>
+      <line x1="50" y1="50" x2="50" y2="250" stroke="#999"/>
+
+      <line x1="50" y1="140" x2="550" y2="140" stroke="#333" stroke-width="2"/>
+
+      <ellipse cx="300" cy="140" rx="160" ry="50"
+        fill="none" stroke="#bbb" stroke-dasharray="6"/>
+
+      <text x="300" y="130" text-anchor="middle" font-size="12">
+        Expectativa
+      </text>
+      <text x="300" y="80" text-anchor="middle" font-size="12">
+        Variância acumulada
+      </text>
+    </svg>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>Arquivo Público — Poker como Método</p>
+  <p>Contato: escritorapostador@gmail.com</p>
+</footer>
+
+</body>
+</html>
